@@ -1,0 +1,77 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fdf6f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e6397f;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.carousel-item {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #e6397f;
+}
+
+.carousel-item h2 {
+  padding: 15px;
+  background: #e6397f;
+  color: white;
+}
+
+/* Ativo */
+.carousel-item.active {
+  display: block;
+}
